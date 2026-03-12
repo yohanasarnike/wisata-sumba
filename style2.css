@@ -16,15 +16,17 @@ body{
     font-family: 'Poppins',sans-serif;
 }
 
-header{
-    position: fixed; 
-    top:0;
+header {
+    position: fixed;
+    top: 0;
+    right:0;
+    box-sizing:border-box;
     width: 100%;
     padding: 20px 5%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 nav{
@@ -98,4 +100,5 @@ nav a:hover, nav a.active{
 .galeri-lengkap p{
     transition: 0.3s;
 }
+
 
