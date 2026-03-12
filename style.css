@@ -42,7 +42,6 @@ header {
     align-items: center;
     z-index: 1000;
 }
-
 .home {
     height: 60vh;
     display: flex;
@@ -275,3 +274,4 @@ nav a.active {
     }
 
 }
+
