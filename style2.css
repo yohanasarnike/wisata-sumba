@@ -70,8 +70,9 @@ nav a:hover, nav a.active{
 
 .detail-wisata:target {
     display: block;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 1.5s;
 }
+
 
 .detail-wisata p {
     text-align: justify;
@@ -104,5 +105,6 @@ nav a:hover, nav a.active{
     from { opacity: 0; }
     to { opacity: 3; }
 }
+
 
 
