@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:  #f4e1c1;
+    font-family: 'Poppins',sans-serif;
+}
+
+header{
+    position: fixed; 
+    top:0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    margin-right: 70px;
+    transition: .7s;
+    
+}
+
+nav a:hover, nav a.active{
+    color:#802403; ;
+}
+
+
+.detail-wisata h2{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+.detail-wisata {
+    display: none;
+    padding: 10px 10% 20px;
+    text-align: center;
+}
+
+#prailiu .galeri-lengkap img{
+    width: calc(50%-20px); 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 15px;
+
+}
+
+.detail-wisata:target {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+.detail-wisata p {
+    text-align: justify;
+    color: #391a0f;
+}
+
+
+.galeri-lengkap img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 15px;
+}
+.galeri-lengkap img:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.galeri-lengkap{
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.galeri-lengkap p{
+    transition: 0.3s;
+}
+

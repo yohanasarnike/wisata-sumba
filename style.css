@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Bodoni+Moda);
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script");
+@import url(https://fonts.googleapis.com/css2?family=Rancho&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-bg: #f4e1c1;
+    --color-text: #170101;
+    --color-main: #802403;
+}
+
+html {
+    font-size: 80.7%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 9%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+}
+
+.home {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 56;
+    line-height: 1.3;
+    background-image: url("profilSumba.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.home-content p {
+    font-size: 35px;
+
+}
+
+.home-content h1 {
+    font-family: 'Racho', cursive;
+}
+
+.home-content span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: 20px;
+    color: rgb(5, 0, 0);
+    margin-left: 40px;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--color-main);
+}
+
+.wisata {
+    padding: 100px 3%;
+    text-align: center;
+}
+
+.judul {
+    font-size: 40px;
+    margin: 70px 0 60px 0;
+    margin-bottom: 150px;
+    margin-top: -50px;
+}
+
+.wisata-item {
+    flex: 0 1 calc(25% - 30px);
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.wisata-item a {
+    color: #170101;
+}
+
+.wisata-item h3 {
+    margin-top: 10px;
+    min-height: 60px;
+    align-items: center;
+}
+
+.wisata-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+}
+
+.wisata-item img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.wisata-container {
+    background-color: rgba(115, 36, 2, 0.29);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgb(0, 0, 0, 0, 0.4);
+    max-width: 5000px;
+    margin: -100px auto 0;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.alam-tiga .wisata-item {
+    flex: 0 1 calc(33.33% - 40px);
+    max-width: 300px;
+}
+
+.wisata-container.alam-tiga {
+    max-width: 1000px;
+    margin: -100px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.budaya {
+    background-color: #642b2b3b;
+}
+
+#wisata-budaya .judul {
+    margin-top: 10px;
+    margin-bottom: 90px;
+    position: relative;
+    top: -90px;
+}
+
+.btn {
+    background-color: #0000003c;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+
+}
+
+.btn:hover {
+    box-shadow: 0 0 50px white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.176);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-top: 0;
+    padding-top: 10px;
+
+}
+
+.dropdown-content a {
+    color: var(--color-text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: 0;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+        justify-content: center;
+    }
+
+    nav a {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .home {
+        height: 50vh;
+        font-size: 24px;
+    }
+
+    .home-content span {
+        font-size: 40px;
+    }
+
+    .wisata-container,
+    .wisata-container.alam-tiga {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .wisata-item,
+    .alam-tiga .wisata-item {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    .galeri-lengkap img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+    #prailiu .galeri-lengkap img {
+        width: 100%;
+        height: auto;
+    }
+
+    .detail-wisata {
+        padding: 80px 5% 40px;
+    }
+}
